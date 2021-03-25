@@ -13,10 +13,10 @@ import imageapi from './controllers/imageapi.js'
 const db = knex ({
     client: 'pg',
     connection: {
-      host : 'postgresql-asymmetrical-11916',
-      user : 'postgres',
-      password : 'test',
-      database : 'smartbrain'
+      connectionString : process.env.DATABASE_URL,
+      ssl: {
+        rejectUnauthorized: false
+      }
     }
   });
 

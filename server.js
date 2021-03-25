@@ -31,12 +31,12 @@ app.get('/profile/:id', (req, res) => { profile(req, res, db) })
 app.put('/image', (req, res) => { image(req, res, db) })
 app.post('/imageurl', (req, res) => { imageapi(req, res) })
 
-const PORT = process.env.PORT
-app.listen(PORT, () => {
-    console.log(`Server is listening on port ${PORT}`);
+// const PORT = process.env.PORT
+app.listen(process.env.PORT || 3000, () => {
+    console.log(`Server is listening on port ${process.env.PORT}`);
 });
 
-console.log(PORT)   
+// console.log(PORT)   
 
 // bcrypt.hash(password, null, null, function(err, hash) {
 //     console.log(hash);

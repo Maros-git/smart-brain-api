@@ -10,6 +10,8 @@ import profile from './controllers/profile.js';
 import image from './controllers/image.js';
 import imageapi from './controllers/imageapi.js'
 
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0; 
+
 const db = knex ({
     client: 'pg',
     connection: {

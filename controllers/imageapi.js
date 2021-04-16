@@ -1,7 +1,7 @@
 import Clarifai from 'clarifai';
 
 const app = new Clarifai.App({
-    apiKey: '5f45439ac5ad41df8fcbb536c3afe794'
+    apiKey: `U can get it for free at 'https://portal.clarifai.com/login'`
 })
 
 const handleApiCall = (req, res) => {
